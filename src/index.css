@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-nostalgia-50: #fdfbf7;
+  --color-nostalgia-100: #f7f1e3;
+  --color-nostalgia-200: #efe2c8;
+  --color-nostalgia-300: #e5ceaa;
+  --color-nostalgia-400: #dcb88e;
+  --color-nostalgia-500: #d2a072;
+  --color-nostalgia-600: #c5865a;
+  --color-nostalgia-700: #a46a48;
+  --color-nostalgia-800: #86543e;
+  --color-nostalgia-900: #6d4536;
+
+  --color-retro-pink: #ffafcc;
+  --color-retro-blue: #a2d2ff;
+  --color-retro-green: #cae7b9;
+
+  /* First Love Status Palettes */
+  /* Single - Lighter Pink (Soft, airy pastel) */
+  --color-mint-100: #FFE4E9;
+  /* Much lighter background */
+  --color-mint-300: #FFB2C3;
+  /* Soft border/accent */
+  --color-mint-900: #9E1933;
+  /* Readable text */
+
+  /* Not Single - Heavier Purple (More saturation/weight) */
+  --color-rose-100: #DCD0FF;
+  /* Deeper, richer lilac background */
+  --color-rose-300: #B399FF;
+  /* Stronger purple border */
+  --color-rose-900: #3F2868;
+  /* Deep purple text */
+
+  --font-sans: 'Kanit', sans-serif;
+  --font-serif: 'Kanit', sans-serif;
+  /* Overriding serif to keep consistency if needed, or stick to user request only */
+}
+
+:root {
+  font-family: 'Kanit', sans-serif;
+  /* It's Complicated / ??? - Light Blue (Balanced) */
+  --color-lavender-100: #ADD8E6;
+  --color-lavender-300: #87CEEB;
+  --color-lavender-900: #004569;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-nostalgia-50 text-nostalgia-900;
+    font-family: 'Kanit', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Force apply to all common text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  div {
+    font-family: 'Kanit', sans-serif !important;
+  }
+}
